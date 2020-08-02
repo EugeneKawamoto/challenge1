@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .clearfix::after {
   display: block;
   content: "";
@@ -69,4 +70,23 @@ main {
 footer {
   height: 50px;
   background-color: #aaa;
+}
+
+@media screen and (max-width:768px) {
+
+  main {
+    width: 100%;
+  }
+
+  .step-box {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .step-box:last-child {
+    margin-right: auto;
+  }
+
 }
